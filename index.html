@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design WEBSITE with AWAIZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="boxline">
+        <div id="linemoving">
+
+        </div>
+    </div>
+    <span ><h1 id="hamburger" >&#9777;</h1></span>
+    <span ><h1 id="cross" >&#10005;</h1></span>
+    <nav id="navbar">
+    <div id="Logo">
+        <a id="Logon" href="#Home"><h1><span class="Logoname" >A</span><span class="Logoname1" >waiz</span></h1>
+    </div>
+        <ul>
+            <li><a class="ultxt" href="#Home">Home</a></li>
+            <li><a class="ultxt" href="#About">About Me</a></li>
+            <li><a class="ultxt1" href="#Projects">Projects <div id="downkey" >&#10151;</div> <div id="upkey" >&#10151;</div> </a>
+               <div id="Projectbox">
+        <ul>
+            <li>
+                <a class="Protxt" href="Web.html">Website </a>
+                <a class="Protxt" href="App.html">App </a>
+                <a class="Protxt" href="Game.html">Game </a>
+                <a class="Protxt" href="Java.html">JS </a>
+                <a class="Protxt" href="Python.html">Python </a>
+        </ul>
+    </div>
+</li>
+            <li><a class="ultxt" href="#Contact">Contact Me</a></li>
+        </ul>
+    </nav>
+ 
+<section id="Home">
+    <div id="alltext">
+    <h1>Design And Create Your Website </h1>
+    <p class="alltext-p1" >Lorem ipsum dolor sit amet consectetur adipisicing elit officia expedita consequuntur </p>
+    <p class="alltext-p2" >Lorem ipsum, dolor sit amet consectetur adipisicing elit neque, blanditiis.</p>
+    <div class="buttons">
+       <a class="btntxt1" href="">Portfolia Website</a>
+        <a class="btntxt" href="#About">About Me</a>
+    </div>
+</div>
+</section>    
+
+<section id="About">
+    <div class="heading-about">
+        <h1>About Me</h1>
+        <div class="line-about">
+            <p>Learn more about me</p>
+        </div>
+    </div>
+    <div class="all-info">
+    <div class="Img-about">
+        <img src="Images/img2.jpeg" alt="">
+    </div>
+    <div class="Info-about">
+        <p class="text1" >I am a Website Developer. I am also App and Game Developer . I have learnt computer languages such as Java  , Html , Cascading Style Sheet , Java Script , Python , C , C++ . I am planning to learn Amazon AWS. <br>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est nesciunt facilis quod delectus vel, aspernatur ducimus error esse quidem iusto ratione dolor exercitationem? Soluta necessitatibus voluptatem quam, qui nesciunt iusto perspiciatis temporibus doloremque aspernatur repudiandae dolorum quaerat odio distinctio! <br><br>
+        <span class="symbols">> </span>Name : Awaizalam.I.Patel <br>
+         <span class="symbols">> </span> Email : awaizalampatel27@gmail.com <br>
+         <span class="symbols">> </span> Phone : 8999925776 <br>
+         <span class="symbols">> </span> Address : HM Royal, Kondawa, Pune 
+         </p>
+</div>
+</section>
+
+<section id="Contact" >
+    <div class="heading-contact">
+        <h1>Contact Me</h1>
+    </div>
+    <div class="line-about">
+        <p>Leave a comment for Awaiz</p>
+    </div>
+    <div class="allcontent">
+    <form action="">
+        <input class="name" type="text" placeholder="Enter Your Name"><br>
+        <input class="email" type="email" placeholder="Enter Your Email"><br>
+        <input class="no" type="tel" placeholder="Enter Your Number"><br>
+        <textarea placeholder="Tell Us About Yourself And How Your Project Should Look Like ?" class="msg" cols="30" rows="10"></textarea><br>
+        <input  class="submit" type="submit" placeholder="Submit Form">
+    </form>
+    <div id="map">
+        <div class="heading-map">
+            <h1>Embeded Location Map</h1>
+        </div>
+        <iframe id="mapmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d562.5639748408075!2d73.89168354447378!3d18.462619329288167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb5e18decc37%3A0xb4df715769407f5b!2sHM%20royal!5e0!3m2!1sen!2sin!4v1647194411796!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+   </div>
+</div>
+<footer>
+    <h1>Designed And Created By &copy; Awaizalam.I.Patel  </h1>
+</footer>
+</section>
+
+
+
+</body>
+<script>
+    let nav = document.getElementById('navbar')
+    let downarr = document.getElementById('downkey')
+    let uparr = document.getElementById('upkey')
+    let probox = document.getElementById('Projectbox')
+    let ham = document.getElementById('hamburger')
+    let cross = document.getElementById('cross')
+    let alltxt = document.getElementById('alltext')
+     let Logona = document.getElementById('Logon')
+
+     downarr.onclick=function(){
+    probox.style.display="block";
+    downarr.style.display='none'
+    uparr.style.display='block'
+    nav.style.alignItems="revert"
+     }
+     uparr.onclick=function(){
+       probox.style.display="none";
+       downarr.style.display='block'
+       uparr.style.display='none'
+       nav.style.alignItems="center"
+     }
+    
+    window.addEventListener("scroll",function(){
+        if(window.pageYOffset>0){
+        nav.classList.add("scroll")
+        }
+        else{
+        nav.classList.remove("scroll")
+        }
+    })
+    ham.onclick = function(){
+       nav.classList.toggle("navcome");
+       if(nav.classList.contains("navcome")){
+           ham.style.display="none"
+           cross.style.display="block"
+          alltxt.style.display="none"
+       }
+        else{
+           ham.style.display="block"
+           cross.style.display="none"
+           alltxt.style.display="block"
+       }
+    }
+    cross.onclick = function(){
+       nav.classList.toggle("navcome");
+       if(nav.classList.contains("navcome")){
+           ham.style.display="none"
+           cross.style.display="block"
+           alltxt.style.display="none"
+       }
+        else{
+           ham.style.display="block"
+           cross.style.display="none"
+           alltxt.style.display="block"
+       }
+    }
+</script>
+</html>

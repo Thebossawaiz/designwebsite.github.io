@@ -1,0 +1,1196 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#boxline {
+    height: 5px;
+    width: 1903px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+#linemoving {
+    height: 11px;
+    width: 2px;
+    background-color:#ff7b00 ;
+    position: relative;
+    animation-name: line1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    display: none;
+}
+@keyframes line1 {
+    from{
+    width: 2px;
+    }
+    to{
+     width: 1903px;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+.scroll{
+    background-color: white;
+}
+.scroll span{
+   color: #ff7b00;
+}
+.scroll .ultxt{
+   color: #ff7b00;
+}
+.scroll .ultxt1{
+   color: #ff7b00;
+}
+.scroll #Logoname1{
+   color: #ff7b00;
+}
+.navcome{
+    transform: translateX(987px);
+    transition: 1s;
+}
+#navbar {
+    height: 10vh;
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+#hamburger{
+    position: absolute;
+    left: 1825px;
+    font-size: 40px;
+    color: white;
+    top: 13px;
+    display: none;
+}
+#cross{
+    position: absolute;
+    left: 1825px;
+    font-size: 40px;
+    color: white;
+    top: 13px;
+    display: none;
+}
+.Logoname {
+    color: #ff7b00;
+    font-size: 60px;
+    font-family: 'PT Sans', sans-serif;
+}
+.Logoname1{
+    color: white;
+    font-size: 30px;
+    font-family: 'PT Sans', sans-serif;
+}
+#downkey {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transform: rotate(90deg);
+    margin-left: 7px;
+}
+#upkey {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    transform: rotate(270deg);
+    margin-left: 15px;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+.ultxt{
+    text-decoration: none;
+    color: white;
+    padding: 0 33px;
+    font-size: 30px;
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+}
+.ultxt1{
+    text-decoration: none;
+    color: white;
+    padding: 0 33px;
+    font-size: 30px;
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.ultxt:after{
+    content: "";
+    position: absolute;
+    background-color: #ff7b00;
+    height: 3px;
+    width:0;
+    left: 0;
+    bottom: -10px;
+}
+.ultxt:hover::after{
+transition: 0.5s;
+width: 100%;
+}
+#Logo h1{
+    color: white;
+    font-size: 30px;
+    font-family: 'PT Sans', sans-serif;
+}
+#Logo {
+    margin: 0 85px;
+}
+#Logo a{
+    text-decoration: none;
+}
+#Projectbox {
+    background-color: white;
+    font-family: 'PT Sans', sans-serif;
+    display: none;
+    width: 0;
+}
+#Projectbox h1{
+    margin-bottom: 20px;
+    color: white;
+    cursor: pointer;
+    color: black;
+}
+.Protxt {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: white;
+    color: #ff7b00;
+    padding: 7px 5px;
+    font-size: 29px;
+    font-family: 'PT Sans', sans-serif;
+    margin-left: 36px;
+}
+.Protxt:hover{
+  background-color: #ff7b00;  
+  color: white;
+}
+
+/* Home starts  */
+
+#Home{
+    background: url(../images/bg3.webp);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+#alltext h1{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    transform: translateY(367px);
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+}
+#alltext p {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    transform: translateY(382px);
+    font-style: italic;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+    padding: 2px 0;
+}
+#alltext-p1{
+margin-top: 10px;
+}
+.buttons {
+    margin-top: 423px;
+    display: flex;
+    justify-content: center;
+}
+.btntxt1{
+    text-decoration: none;
+    color: white;
+    padding: 7px 27px;
+    font-size: 30px;
+    font-family: 'PT Sans', sans-serif;
+    border: 2px solid white;
+    margin: 0 20px 0 0;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    background-color: #ff7b00;
+}
+.btntxt1:hover{
+    background-color: transparent;
+    color: #ff7b00;
+}
+.btntxt{
+    text-decoration: none;
+    color: white;
+    padding: 7px 27px;
+    font-size: 30px;
+    font-family: 'PT Sans', sans-serif;
+    border: 2px solid white;
+    margin: 0 20px 0 0;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+}
+.btntxt:after {
+    content: "";
+    position: absolute;
+    background-color:#ff7b00;
+    height: 53px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    z-index: -1;
+    border-radius: 11px;
+}
+.btntxt:hover::after{
+transition: 0.5s;
+width: 100%;
+}
+.btntxt:hover{
+    border: 2px solid #ff7b00
+}
+
+/* Home ends  */
+
+/* About starts  */
+
+#About{
+    height: 104vh;
+    background-color: black;
+}
+.heading-about h1{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+.heading-about {
+    padding-top: 152px;
+}
+
+.line-about p {
+    text-align: center;
+    font-size: 30px;
+    color: #ff7b00;
+    font-style: italic;
+    font-family: 'PT Sans', sans-serif;
+}
+.line-below-p {
+    width: 27vh;
+    left: 84vh;
+    position: absolute;
+    color: white;
+    margin-top: 9px;
+    font-family: 'PT Sans', sans-serif;
+}
+.all-info{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    border: 10px solid #ff7b00;
+    border-left: white;
+}
+.Img-about {
+    width: 28%;
+    height: 75vh;
+    margin-top: -120px;
+    margin-left: -1px;
+}
+.Img-about img{
+    height: 75vh;
+    width: 100%;
+    border: 10px solid #ff7b00;
+}
+.Info-about {
+    width: 70%;
+    height: 75vh;
+    margin-top: 30px;
+}
+.text1{
+    padding-top: 23px;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.symbols{
+    font-size: 40px;
+    color: #ff7b00;
+}
+/* About ends  */
+
+
+
+/* Contact starts  */
+
+#Contact {
+    height: 187vh;
+    background-color: black;
+}
+.heading-contact h1{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+.heading-contact {
+    padding-top: 152px;
+}
+Form{
+    margin-left: 10px;
+}
+.name, .email, .no{
+    width: 96%;
+    height: 5vh;
+    font-size: 25px;
+    background: transparent;
+    border: 2px solid #ff7b00;
+    border-radius: 15px;
+    padding-left: 15px;
+    margin: 20px 0;
+    color: white;
+}
+.submit{
+    width: 100%;
+    height: 5vh;
+    border: 2px solid #ff7b00;
+    border-radius: 15px;
+    background:transparent;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.submit:hover{
+    background: linear-gradient(to right, red,yellow);
+    transition: 0.5s;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.msg{
+    width: 96%;
+     height: 340px;
+    background: transparent;
+    border: 2px solid #ff7b00;
+    border-radius: 15px;
+    color: white;
+    font-size: 25px;
+    padding-left: 15px;
+}
+::placeholder{
+    color: white;
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+}
+.allcontent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.heading-map h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    margin-bottom:10px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.heading-map {
+    padding-top: 152px;
+}
+footer {
+    margin-top: 78px;
+    background: linear-gradient(to right, red,yellow);
+    color: white;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+footer h1{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+}
+/* Contact Ends  */
+
+
+@media only screen and (max-width: 1324px) and (min-width: 988px){
+
+/* Home starts   */
+
+.alltext h1 {
+color: white;
+font-size: 67px;
+text-align: center;
+transform: translateY(367px);
+font-family: 'PT Sans', sans-serif;
+cursor: pointer;
+}
+#alltext p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    transform: translateY(382px);
+    font-style: italic;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+    padding: 2px 0;
+}
+.buttons {
+    margin-top: 409px;
+    display: flex;
+    justify-content: center;
+}
+.btntxt {
+    text-decoration: none;
+    color: white;
+    padding: 7px 27px;
+    font-size: 24px;
+    font-family: 'PT Sans', sans-serif;
+    border: 2px solid white;
+    margin: 0 20px 0 0;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+}
+#Logo {
+    margin: 0 37px;
+}
+/* Home ends   */
+
+/* About starts  */
+
+    .text1 {
+    padding-top: 23px;
+    font-size: 24px;
+    margin-left: 30px;
+    }
+
+/* About ends */
+    }
+
+
+@media only screen and (max-width: 987px) and (min-width: 700px){
+
+    /* Nav starts   */
+    #hamburger {
+        display: block;
+        position: fixed;
+        left: 20px;
+        z-index: 1;
+        color: #ff7b00;
+    }
+    #cross{
+        display: none;
+        position: fixed;
+        left: 20px;
+        z-index: 1;
+        color: #ff7b00;
+    }
+    #navbar {
+        height: 100vh;
+        display: flex;
+        align-items: baseline;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        background: black;
+        right: 987px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        list-style: none;
+        padding: 29px 97px;
+    }
+    #Logo {
+        margin: 0 128px;
+    }
+    .Protxt {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        background-color: #ff7b00;
+        color: white;
+        padding: 7px 123px 7px 0;
+        font-size: 29px;
+        font-family: 'PT Sans', sans-serif;
+        margin-left: 8px;
+    }
+    .Logoname {
+        color: #ff7b00;
+        font-size: 60px;
+        font-family: 'PT Sans', sans-serif;
+    }
+    .Logoname1 {
+        color: #ff7b00;
+        font-size: 30px;
+        font-family: 'PT Sans', sans-serif;
+    }
+    .ultxt {
+        text-decoration: none;
+        color: #ff7b00;
+        padding: 0 33px;
+        font-size: 30px;
+        font-family: 'PT Sans', sans-serif;
+        position: relative;
+    }
+    .ultxt1 {
+        text-decoration: none;
+        color: #ff7b00;
+        padding: 0 33px;
+        font-size: 30px;
+        font-family: 'PT Sans', sans-serif;
+        display: flex;
+        justify-content: space-between;
+    }
+    #downkey {
+        color: #ff7b00;
+        font-size: 25px;
+        cursor: pointer;
+        transform: rotate(90deg);
+        margin-left: 7px;
+    }
+    #upkey {
+        color: #ff7b00;
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+        transform: rotate(270deg);
+        margin-left: 15px;
+    }
+    #Projectbox {
+        background-color: #ff7b00;
+        font-family: 'PT Sans', sans-serif;
+        display: none;
+        width: 0;
+    }
+    .Protxt {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        background-color:#ff7b00;
+        color: white;
+        padding: 7px 123px 7px 19px;
+        font-size: 29px;
+        font-family: 'PT Sans', sans-serif;
+        margin-left: 8px;
+        text-align: center;
+    }
+
+    /* Nav ends   */
+
+    /* Home starts   */
+
+    #Home {
+        background: url(../images/bg3.webp);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #alltext h1 {
+        color: white;
+        font-size: 55px;
+        text-align: center;
+        transform: translateY(367px);
+        font-family: 'PT Sans', sans-serif;
+        cursor: pointer;
+    }
+    #alltext p {
+        color: white;
+        font-size: 19px;
+        text-align: center;
+        transform: translateY(382px);
+        font-style: italic;
+        cursor: pointer;
+        font-family: 'PT Sans', sans-serif;
+        padding: 2px 0;
+    }
+    .btntxt {
+        text-decoration: none;
+        color: white;
+        padding: 7px 27px;
+        font-size: 25px;
+        font-family: 'PT Sans', sans-serif;
+        border: 2px solid white;
+        margin: 0 20px 0 0;
+        position: relative;
+        z-index: 1;
+        border-radius: 15px;
+    }
+
+    /* Home ends   */
+    
+    /* About starts  */
+
+    #About {
+        height: 135vh;
+        background-color: black;
+    }
+    .heading-about {
+        padding-top: 22px;
+    }
+    .all-info {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-family: 'PT Sans', sans-serif;
+        flex-direction: column-reverse;
+        border-left: white;   
+        border-top: white;
+        border-right: white;
+        border-bottom: white;
+    }
+    .text1 {
+        padding-top: 23px;
+        font-size: 17px;
+        margin-left: 30px;
+    }
+    .Info-about {
+        width: 100%;
+        height: 75vh;
+        margin-top: 30px;
+    }
+    .Img-about {
+        width: 100%;
+        height: 75vh;
+        margin-top: -314px;
+    }
+    
+.Img-about img {
+    height: 75vh;
+    width: 100%;
+    border-left: white;   
+    border-top: white;
+    border-right: white;
+    border-bottom: white;
+}
+
+    /* About ends */
+    
+    /* Contact starts  */
+
+    .heading-contact {
+        padding-top: 35px;
+    }
+
+    /* Contact ends */
+    }
+
+
+    @media only screen and (max-width: 699px) and (min-width: 500px){
+
+        /* Nav starts   */
+        #hamburger {
+            display: block;
+            position: fixed;
+            left: 20px;
+            z-index: 1;
+            color: #ff7b00;
+        }
+        #cross{
+            display: none;
+            position: fixed;
+            left: 20px;
+            z-index: 1;
+            color: #ff7b00;
+        }
+        #navbar {
+            height: 100vh;
+            display: flex;
+            align-items: baseline;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            flex-direction: column;
+            background: black;
+            right: 987px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+        li {
+            list-style: none;
+            padding: 29px 97px;
+        }
+        #Logo {
+            margin: 0 128px;
+        }
+        .Protxt {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            background-color: #ff7b00;
+            color: white;
+            padding: 7px 123px 7px 0;
+            font-size: 29px;
+            font-family: 'PT Sans', sans-serif;
+            margin-left: 8px;
+        }
+        .Logoname {
+            color: #ff7b00;
+            font-size: 60px;
+            font-family: 'PT Sans', sans-serif;
+        }
+        .Logoname1 {
+            color: #ff7b00;
+            font-size: 30px;
+            font-family: 'PT Sans', sans-serif;
+        }
+        .ultxt {
+            text-decoration: none;
+            color: #ff7b00;
+            padding: 0 33px;
+            font-size: 30px;
+            font-family: 'PT Sans', sans-serif;
+            position: relative;
+        }
+        .ultxt1 {
+            text-decoration: none;
+            color: #ff7b00;
+            padding: 0 33px;
+            font-size: 30px;
+            font-family: 'PT Sans', sans-serif;
+            display: flex;
+            justify-content: space-between;
+        }
+        #downkey {
+            color: #ff7b00;
+            font-size: 25px;
+            cursor: pointer;
+            transform: rotate(90deg);
+            margin-left: 7px;
+        }
+        #upkey {
+            color: #ff7b00;
+            font-size: 22px;
+            cursor: pointer;
+            display: none;
+            transform: rotate(270deg);
+            margin-left: 15px;
+        }
+        #Projectbox {
+            background-color: #ff7b00;
+            font-family: 'PT Sans', sans-serif;
+            display: none;
+            width: 0;
+        }
+        .Protxt {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            background-color:#ff7b00;
+            color: white;
+            padding: 7px 123px 7px 19px;
+            font-size: 29px;
+            font-family: 'PT Sans', sans-serif;
+            margin-left: 8px;
+            text-align: center;
+        }
+    
+        /* Nav ends   */
+    
+        /* Home starts   */
+
+        #alltext h1 {
+            color: white;
+            font-size: 35px;
+            text-align: center;
+            transform: translateY(367px);
+            font-family: 'PT Sans', sans-serif;
+            cursor: pointer;
+            margin-bottom: 13px;
+        }
+        #alltext p {
+            color: white;
+            font-size: 13px;
+            text-align: center;
+            transform: translateY(382px);
+            font-style: italic;
+            cursor: pointer;
+            font-family: 'PT Sans', sans-serif;
+            padding: 2px 0;
+        }
+        .btntxt {
+            text-decoration: none;
+            color: white;
+            padding: 7px 27px;
+            font-size: 16px;
+            font-family: 'PT Sans', sans-serif;
+            border: 2px solid white;
+            margin: 0 20px 0 0;
+            position: relative;
+            z-index: 1;
+            border-radius: 15px;
+        }
+    
+        /* Home ends   */
+        
+        /* About starts  */
+    
+        #About {
+            height: 90vh;
+            background-color: black;
+        }
+        .heading-about {
+            padding-top: 22px;
+        }
+        .all-info {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-family: 'PT Sans', sans-serif;
+            flex-direction: column-reverse;
+            border-left: white;   
+            border-top: white;
+            border-right: white;
+            border-bottom: white;
+        }
+        .text1 {
+            padding-top: 23px;
+            font-size: 22px;
+            margin-left: 30px;
+        }
+        .heading-about h1 {
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            font-family: 'PT Sans', sans-serif;
+        }
+        .Info-about {
+            width: 100%;
+            height: 75vh;
+            margin-top: 30px;
+        }
+        .Img-about {
+            width: 100%;
+            height: 75vh;
+            margin-top: -314px;
+            display: none;
+        }
+        
+    .Img-about img {
+        height: 75vh;
+        width: 100%;
+    }
+    
+        /* About ends */
+        
+        /* Contact starts  */
+    
+        .heading-contact {
+            padding-top: 35px;
+        }
+        .heading-contact h1 {
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            font-family: 'PT Sans', sans-serif;
+        }
+        Form {
+            margin-left: 10px;
+            margin-top: 36px;
+        }
+        .heading-map h1 {
+            text-align: center;
+            font-size: 36px;
+            color: white;
+            margin-bottom: 10px;
+            font-family: 'PT Sans', sans-serif;
+        }
+        #mapmap{
+            width: 101%;
+        }
+        footer h1 {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 20px;
+        }
+
+        /* Contact ends */
+    }
+
+
+    @media only screen and (max-width: 499px) and (min-width: 300px){
+
+        /* Nav starts   */
+        #hamburger {
+            display: block;
+            position: fixed;
+            left: 20px;
+            z-index: 1;
+            color: #ff7b00;
+        }
+        #cross{
+            display: none;
+            position: fixed;
+            left: 20px;
+            z-index: 1;
+            color: #ff7b00;
+        }
+        #navbar {
+            height: 100vh;
+            display: flex;
+            align-items: baseline;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            flex-direction: column;
+            background: black;
+            right: 987px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+        li {
+            list-style: none;
+            padding: 29px 97px;
+        }
+        #Logo {
+            margin: 0 128px;
+        }
+        .Protxt {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            background-color: white;
+            color: #ff7b00;
+            padding: 7px 123px 7px 0;
+            font-size: 29px;
+            font-family: 'PT Sans', sans-serif;
+            margin-left: 8px;
+        }
+        .Logoname {
+            color: #ff7b00;
+            font-size: 60px;
+            font-family: 'PT Sans', sans-serif;
+        }
+        .Logoname1 {
+            color: #ff7b00;
+            font-size: 30px;
+            font-family: 'PT Sans', sans-serif;
+        }
+        .ultxt {
+            text-decoration: none;
+            color: #ff7b00;
+            padding: 0 33px;
+            font-size: 30px;
+            font-family: 'PT Sans', sans-serif;
+            position: relative;
+        }
+        .ultxt1 {
+            text-decoration: none;
+            color: #ff7b00;
+            padding: 0 33px;
+            font-size: 30px;
+            font-family: 'PT Sans', sans-serif;
+            display: flex;
+            justify-content: space-between;
+        }
+        #downkey {
+            color: #ff7b00;
+            font-size: 25px;
+            cursor: pointer;
+            transform: rotate(90deg);
+            margin-left: 7px;
+        }
+        #upkey {
+            color: #ff7b00;
+            font-size: 22px;
+            cursor: pointer;
+            display: none;
+            transform: rotate(270deg);
+            margin-left: 15px;
+        }
+        #Projectbox {
+            background-color: #ff7b00;
+            font-family: 'PT Sans', sans-serif;
+            display: none;
+            width: 0;
+        }
+        .Protxt {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            background-color:#ff7b00;
+            color: white;
+            padding: 7px 123px 7px 19px;
+            font-size: 29px;
+            font-family: 'PT Sans', sans-serif;
+            margin-left: 8px;
+            text-align: center;
+        }
+    
+        /* Nav ends   */
+    
+        /* Home starts   */
+
+        .buttons {
+            margin-top: 383px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 23px;
+        }
+        .btntxt:after {
+            content: "";
+            position: absolute;
+            background-color: #ff7b00;
+            height: 35px;
+            width: 0;
+            left: 0;
+            bottom: 0px;
+            z-index: -1;
+            border-radius: 15px;
+        }
+        #alltext h1 {
+            color: white;
+            font-size: 35px;
+            text-align: center;
+            transform: translateY(367px);
+            font-family: 'PT Sans', sans-serif;
+            cursor: pointer;
+            margin-bottom: 13px;
+        }
+        #alltext p {
+            color: white;
+            font-size: 13px;
+            text-align: center;
+            transform: translateY(382px);
+            font-style: italic;
+            cursor: pointer;
+            font-family: 'PT Sans', sans-serif;
+            padding: 2px 0;
+        }
+        .btntxt {
+            text-decoration: none;
+            color: white;
+            padding: 7px 27px;
+            font-size: 16px;
+            font-family: 'PT Sans', sans-serif;
+            border: 2px solid white;
+            margin: 19px 20px 0 0;
+            position: relative;
+            z-index: 1;
+            border-radius: 15px;
+            text-align: center;
+        }
+    
+        /* Home ends   */
+        
+        /* About starts  */
+    
+        #About {
+            height: 103vh;
+            background-color: black;
+        }
+        .heading-about {
+            padding-top: 22px;
+        }
+        .all-info {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-family: 'PT Sans', sans-serif;
+            flex-direction: column-reverse;
+            border-left: white;   
+            border-top: white;
+            border-right: white;
+            border-bottom: white;
+        }
+        .text1 {
+            padding-top: 23px;
+            font-size: 18px;
+            margin-left: 30px;
+        }
+        .heading-about h1 {
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            font-family: 'PT Sans', sans-serif;
+        }
+        .Info-about {
+            width: 100%;
+            height: 75vh;
+            margin-top: 30px;
+        }
+        .Img-about {
+            width: 100%;
+            height: 75vh;
+            margin-top: -314px;
+            display: none;
+        }
+        
+    .Img-about img {
+        height: 75vh;
+        width: 100%;
+    }
+    
+        /* About ends */
+        
+        /* Contact starts  */
+    
+        .heading-contact {
+            padding-top: 35px;
+        }
+        .heading-contact h1 {
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            font-family: 'PT Sans', sans-serif;
+        }
+        Form {
+            margin-left: 10px;
+            margin-top: 36px;
+        }
+        .heading-map h1 {
+            text-align: center;
+            font-size: 36px;
+            color: white;
+            margin-bottom: 10px;
+            font-family: 'PT Sans', sans-serif;
+        }
+        .name, .email, .no {
+            width: 93%;
+            height: 5vh;
+            font-size: 25px;
+            background: transparent;
+            border: 2px solid #ff7b00;
+            border-radius: 15px;
+            padding-left: 15px;
+            margin: 20px 0;
+            color: white;
+        }.msg {
+            width: 92%;
+            height: 251px;
+            background: transparent;
+            border: 2px solid #ff7b00;
+            border-radius: 15px;
+            color: white;
+            font-size: 25px;
+            padding-left: 15px;
+        }
+        #mapmap{
+            width: 101%;
+        }
+        footer h1 {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 20px;
+        }
+
+        /* Contact ends */
+    }

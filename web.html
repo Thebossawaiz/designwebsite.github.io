@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Projects</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .video {
+            width: 100%;
+            height: 32vh;
+            border-radius: 50px;
+        }
+
+        #Website {
+            background: linear-gradient(to right, red, yellow);
+            height: 250vh;
+        }
+
+        .backkey a {
+            font-size: 65px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .main-heading {
+            font-size: 65px;
+            color: white;
+            text-align: center;
+            font-family: 'PT Sans', sans-serif;
+            margin-bottom: 45px;
+        }
+
+        .boxe1 {
+            height: 50vh;
+            display: flex;
+        }
+
+        .boxe1-box1,
+        .boxe1-box2,
+        .boxe1-box3 {
+            border: 12px solid white;
+            border-radius: 50px;
+            height: 32vh;
+            padding-top: 6px;
+            width: 63vh;
+            margin: 0 21px 0 20px;
+            background: #000;
+        }
+
+        .boxe2 {
+            height: 50vh;
+            display: flex;
+            margin-top: -146px;
+        }
+
+        .boxe2-box1,
+        .boxe2-box2,
+        .boxe2-box3 {
+            border: 12px solid white;
+            border-radius: 50px;
+            height: 32vh;
+            padding-top: 6px;
+            width: 63vh;
+            margin: 12px 21px 0 20px;
+            background: #000;
+        }
+
+        .boxe2-box2 {
+            visibility: hidden;
+        }
+
+        .boxe3 {
+            height: 50vh;
+            display: flex;
+            margin-top: -146px;
+        }
+
+        .boxe3-box1,
+        .boxe3-box2,
+        .boxe3-box3 {
+            border: 12px solid white;
+            border-radius: 50px;
+            height: 32vh;
+            padding-top: 6px;
+            width: 63vh;
+            margin: 22px 21px 0 20px;
+            background: #000;
+        }
+
+        .boxe4 {
+            height: 50vh;
+            display: flex;
+            margin-top: -103px;
+        }
+
+        .boxe4-box1,
+        .boxe4-box2,
+        .boxe4-box3 {
+            border: 12px solid white;
+            border-radius: 50px;
+            height: 32vh;
+            padding-top: 6px;
+            width: 63vh;
+            margin: -7px 21px 0 20px;
+            background: #000;
+        }
+
+        .boxe5 {
+            height: 50vh;
+            display: flex;
+            margin-top: -146px;
+        }
+
+        .boxe5-box1,
+        .boxe5-box2,
+        .boxe5-box3 {
+            border: 12px solid white;
+            border-radius: 50px;
+            height: 32vh;
+            padding-top: 6px;
+            width: 63vh;
+            margin: 6px 21px 0 20px;
+            background: #000;
+        }
+
+        .boxe5-box2 {
+            visibility: hidden;
+        }
+
+        .boxe6 {
+            height: 50vh;
+            display: flex;
+            margin-top: -146px;
+        }
+
+        .boxe6-box1,
+        .boxe6-box2,
+        .boxe6-box3 {
+            border: 12px solid white;
+            border-radius: 50px;
+            height: 32vh;
+            padding-top: 6px;
+            width: 63vh;
+            margin: 19px 21px 0 20px;
+            background: #000;
+        }
+
+        @media only screen and (max-width:1299px) and (min-width: 600px) {
+
+            #Website {
+                background-color: black;
+                height: 668vh;
+            }
+
+            .main-heading {
+                font-size: 65px;
+                color: white;
+                text-align: center;
+                font-family: 'PT Sans', sans-serif;
+                margin-bottom: 45px;
+            }
+
+            .boxe1 {
+                height: 120vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe2 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -146px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe2-box2 {
+                visibility: visible;
+            }
+
+            .boxe3 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -146px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe4 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -103px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe5 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -146px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe5-box2 {
+                visibility: visible;
+            }
+
+            .boxe6 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -146px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe1-box1,
+            .boxe1-box2,
+            .boxe1-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 63vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe2-box1,
+            .boxe2-box2,
+            .boxe2-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 63vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe3-box1,
+            .boxe3-box2,
+            .boxe3-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 63vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe4-box1,
+            .boxe4-box2,
+            .boxe4-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 63vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe5-box1,
+            .boxe5-box2,
+            .boxe5-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 63vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe6-box1,
+            .boxe6-box2,
+            .boxe6-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 63vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+
+        }
+
+        @media only screen and (max-width:599px) and (min-width: 380px) {
+
+            #Website {
+                background-color: black;
+                height: 668vh;
+            }
+
+            .main-heading {
+                font-size: 35px;
+                color: white;
+                text-align: center;
+                font-family: 'PT Sans', sans-serif;
+                margin-bottom: 45px;
+            }
+
+            .boxe1 {
+                height: 120vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe1-box1,
+            .boxe1-box2,
+            .boxe1-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 40vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe2 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -146px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe2-box1,
+            .boxe2-box2,
+            .boxe2-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 40vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe2-box2 {
+                visibility: visible;
+            }
+
+            .boxe3 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -146px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe3-box1,
+            .boxe3-box2,
+            .boxe3-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 40vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe4 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -103px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe4-box1,
+            .boxe4-box2,
+            .boxe4-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 40vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe5 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -146px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe5-box1,
+            .boxe5-box2,
+            .boxe5-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 40vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe5-box2 {
+                visibility: visible;
+            }
+
+            .boxe6 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -146px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe6-box1,
+            .boxe6-box2,
+            .boxe6-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 40vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+        }
+
+        @media only screen and (max-width:379px) and (min-width: 300px) {
+
+            #Website {
+                background-color: black;
+                height: 668vh;
+            }
+
+            .main-heading {
+                font-size: 35px;
+                color: white;
+                text-align: center;
+                font-family: 'PT Sans', sans-serif;
+                margin-bottom: 45px;
+            }
+
+            .boxe1 {
+                height: 120vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe1-box1,
+            .boxe1-box2,
+            .boxe1-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 26vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe2 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -146px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe2-box1,
+            .boxe2-box2,
+            .boxe2-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 26vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe2-box2 {
+                visibility: visible;
+            }
+
+            .boxe3 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -146px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe3-box1,
+            .boxe3-box2,
+            .boxe3-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 26vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe4 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -103px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe4-box1,
+            .boxe4-box2,
+            .boxe4-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 26vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe5 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -146px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe5-box1,
+            .boxe5-box2,
+            .boxe5-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 26vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+            .boxe5-box2 {
+                visibility: visible;
+            }
+
+            .boxe6 {
+                height: 120vh;
+                display: flex;
+                /* margin-top: -146px; */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxe6-box1,
+            .boxe6-box2,
+            .boxe6-box3 {
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 32vh;
+                padding-top: 6px;
+                width: 26vh;
+                margin: 10px 21px 0 20px;
+                background: #000;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section id="Website">
+        <span class="backkey"><a href="index.html">&#8617;</a></span>
+        <h1 class="main-heading">My Website Projects</h1>
+        <div id="boxes">
+            <div class="boxe1">
+                <div class="boxe1-box1">
+                    <video class="video" controls>
+                        <source src="../images/Project1-Web.mp4" type="">
+                    </video>
+                </div>
+                <div class="boxe1-box2">
+                    <video class="video" controls>
+                        <source src="../images/Project2-Web.mp4" type="">
+                    </video>
+                </div>
+
+                <div class="boxe1-box3">
+                    <video class="video" controls>
+                        <source src="../images/Project3-Web.mp4" type="">
+                    </video>
+                </div>
+            </div>
+            <div class="boxe2">
+                <div class="boxe2-box1">
+                    <video class="video" controls>
+                        <source src="../images/Project5-Web.mp4" type="">
+                    </video>
+                </div>
+                <div class="boxe2-box2">
+                    <video class="video" controls>
+                        <source src="../images/Project4-Web.mp4" type="">
+                    </video>
+                </div>
+                <div class="boxe2-box3">
+                    <video class="video" controls>
+                        <source src="../images/Project4-Web.mp4" type="">
+                    </video>
+                </div>
+            </div>
+            <div class="boxe3">
+                <div class="boxe3-box1">
+                    <video class="video" controls>
+                        <source src="../images/Project6-Web.mp4" type="">
+                    </video>
+                </div>
+                <div class="boxe3-box2">
+                    <video class="video" controls>
+                        <source src="../images/Project7-Web.mp4" type="">
+                    </video>
+                </div>
+                <div class="boxe3-box3">
+                    <video class="video" controls>
+                        <source src="../images/Project3-Web.mp4" type="">
+                    </video>
+                </div>
+            </div>
+            <div class="boxe4">
+                <div class="boxe4-box1">
+                    <video class="video" controls>
+                        <source src="../images/Project2-Web.mp4" type="">
+                    </video>
+                </div>
+                <div class="boxe4-box2">
+                    <video class="video" controls>
+                        <source src="../images/Project5-Web.mp4" type="">
+                    </video>
+                </div>
+                <div class="boxe4-box3">
+                    <video class="video" controls>
+                        <source src="../images/Project2-Web.mp4" type="">
+                    </video>
+                </div>
+            </div>
+            <div class="boxe5">
+                <div class="boxe5-box1">
+                    <video class="video" controls>
+                        <source src="../images/Project3-Web.mp4" type="">
+                    </video>
+                </div>
+                <div class="boxe5-box2">
+                    <video class="video" controls>
+                        <source src="../images/Project4-Web.mp4" type="">
+                    </video>
+                </div>
+                <div class="boxe5-box3">
+                    <video class="video" controls>
+                        <source src="../images/Project5-Web.mp4" type="">
+                    </video>
+                </div>
+            </div>
+            <div class="boxe6">
+                <div class="boxe6-box1">
+                    <video class="video" controls>
+                        <source src="../images/Project4-Web.mp4" type="">
+                    </video>
+                </div>
+                <div class="boxe6-box2">
+                    <video class="video" controls>
+                        <source src="../images/Project3-Web.mp4" type="">
+                    </video>
+                </div>
+                <div class="boxe6-box3">
+                    <video class="video" controls>
+                        <source src="../images/Project1-Web.mp4" type="">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
